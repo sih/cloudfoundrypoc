@@ -3,6 +3,13 @@ package org.sih.country;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.springframework.stereotype.Service;
+
+/**
+ * This is a simple, in-memory implementation of a Country Data Service.
+ * @author sid
+ */
+@Service
 public class SimpleCountryDao implements CountryDao {
 	
 	private static final Map<String,Country> repo;
