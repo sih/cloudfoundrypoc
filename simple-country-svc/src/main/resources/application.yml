@@ -1,0 +1,16 @@
+# define the location of the eureka server
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${vcap.services.eureka-service.credentials.uri:http://127.0.0.1:8761}/eureka/
+server:
+  port: 8902
+
+---
+spring:
+# when the cloud profile is activated then we need to tell eurek our route
+  profiles: cloud
+eureka:
+  instance:
+    hostname: ${vcap.application.uris[0]}
+    nonSecurePort: 80
