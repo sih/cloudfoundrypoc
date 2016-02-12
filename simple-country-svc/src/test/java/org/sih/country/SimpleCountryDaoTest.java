@@ -17,7 +17,7 @@ public class SimpleCountryDaoTest {
 
 	@Autowired
 	private CountryDao dao;
-	private static final Country GB = new Country("GB","United Kingdom");
+	private static final Country GB = new Country("GB","United Kingdom","Hello");
 	
 	@Before
 	public void setUp() {

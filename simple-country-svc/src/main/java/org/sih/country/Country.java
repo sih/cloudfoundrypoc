@@ -8,10 +8,12 @@ public class Country {
 	
 	private String code;
 	private String description;
+	private String salutation;
 	
-	public Country(String code, String description) {
+	public Country(String code, String description, String salutation) {
 		this.code = code;
 		this.description = description;
+		this.salutation = salutation;
 	}
 
 	public String getCode() {
@@ -20,6 +22,10 @@ public class Country {
 
 	public String getDescription() {
 		return description;
+	}
+	
+	public String getSalutation() {
+		return salutation;
 	}
 
 	@Override

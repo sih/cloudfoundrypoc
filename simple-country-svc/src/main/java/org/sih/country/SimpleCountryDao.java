@@ -15,9 +15,9 @@ public class SimpleCountryDao implements CountryDao {
 	private static final Map<String,Country> repo;
 	static {
 		repo = new HashMap<String,Country>();
-		repo.put("GB", new Country("GB","United Kingdom"));
-		repo.put("FR", new Country("FR","France"));
-		repo.put("ES", new Country("ES","Spain"));
+		repo.put("GB", new Country("GB","United Kingdom","Hello"));
+		repo.put("FR", new Country("FR","France","Bonjour"));
+		repo.put("ES", new Country("ES","Spain","Hola"));
 	}
 
 	@Override
