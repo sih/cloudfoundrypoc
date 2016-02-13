@@ -1,0 +1,10 @@
+---
+env:
+  SPRING_PROFILES_ACTIVE: cloud
+applications:
+- name: country-service
+  memory: 512M
+  host: country-service-sih
+  instances: 1
+  path: build/libs/simple-country-service-0.0.1-SNAPSHOT.jar
+  services: [eureka-service]
