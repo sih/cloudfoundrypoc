@@ -11,6 +11,11 @@ This is a super simple implementation of a Eureka Server (Netflix) that is used 
 ### Sample-Java-Service
 This is a simple greeting app that when started, looks for a Eureka and registers itself as a service.  It does not have the capability to look up another service.
 
+There is a /v2 service that can also take a country code as a parameter and return a country-appropriate greeting.
+
+### Country-Service
+This is a simple service that returns country information (code, name, salutation) for a number of countries. Currently supports [GB,FR,ES,CH,US]
+
 ### EurekaClient
 This is a java service that when employed will envoke the services of the simple-java-service through the service registry.
 
