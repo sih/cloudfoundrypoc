@@ -13,6 +13,9 @@ buildscript{
 apply plugin: 'java'
 apply plugin: 'idea'
 apply plugin: 'spring-boot'
+apply plugin: 'eclipse'
+
+
 
 jar{
     baseName = 'simple-java-consumer'
@@ -23,6 +26,7 @@ repositories{
     jcenter()
     mavenCentral()
 }
+
 
 ext {
     sourceCompatibility = 1.8
@@ -38,3 +42,4 @@ dependencies{
 task wrapper(type: Wrapper){
     gradleVersion = '2.10'
 }
+

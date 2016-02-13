@@ -31,9 +31,9 @@ public class SimpleCountryDaoTest {
 	}
 	
 	@Test
-	public void shouldReturnNullWhenNoCodeMatch() {
+	public void shouldReturnGBWhenNoCodeMatch() {
 		Country c = dao.get("11");
-		assertNull(c);
+		assertEquals(GB,c);
 	}
 	
 }
