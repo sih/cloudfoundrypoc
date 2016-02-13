@@ -13,6 +13,10 @@ This server has been set up to run as a docker image.  To get this up and runnin
 ## Push to Cloudfoundry
  - `cf push [--no-start]` to push the eureka service to CF
  - `cf cups eureka-service -p '{"uri":"http://discovery-service-suggs.cfapps.io"}'` to set up the eureka-service as a service for others to bind to
+ - `cf uups eureka-service -p '{"uri":"http://discovery-service-sih.cfapps.io"}'`
+to update the eureka service (e.g. if you have registered to the wrong service)
+- `cf restage simple-service`
+to restage an application, e.g. after updating the discovery service
  
 ## Useful links
  - [User Provided Services Docs](https://docs.cloudfoundry.org/devguide/services/user-provided.html)
